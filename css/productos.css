@@ -1,0 +1,154 @@
+/* Configuración General */
+html {
+    font-family: 'Lato', 'Roboto', 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #338031;
+    padding: 33px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px; /* Espacio entre los botones */
+}
+
+/* Botones del menú principal */
+a, .menu > a {
+    margin-right: 40px;
+    width: auto;
+    max-width: 150px;
+    padding: 12px 40px;
+    background-color: #efefcc;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    font-weight: 750;
+    font-size: 18px;
+    text-decoration: none;
+    color: #dbad21d7;
+    text-shadow: -1px -1px 0 #fffff0, 
+                1px -1px 0 #fffff0, 
+                -1px 1px 0 #fffff0, 
+                1px 1px 0 #fffff0;
+    cursor: pointer;
+    position: relative; /* Necesario para el submenú */
+}
+
+/* Hover de botones */
+a:hover, .menu > a:hover {
+    background-color: #e9e9be;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Botón de cerrar sesión */
+.cerrar_sesion {
+    background-color: #ff00009c;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+.cerrar_sesion:hover {
+    background-color: #ff0000a6;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Menú desplegable (estilo para la sección Productos) */
+.menu {
+    position: relative; /* Para posicionar el submenú */
+    display: inline-block;
+}
+
+.submenu {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    top: 100%; /* Alineado justo debajo del botón principal */
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    min-width: 160px; /* Tamaño mínimo del menú */
+}
+
+/* Enlaces del submenú */
+.submenu a {
+    display: block; /* Cada enlace ocupa una fila */
+    padding: 10px 20px;
+    color: #dbad21d7;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Hover del submenú */
+.submenu a:hover {
+    background-color: #e9e9be;
+}
+
+/* Mostrar el submenú al pasar el mouse */
+.menu:hover .submenu {
+    display: block; /* Se muestra al pasar el mouse */
+}
+
+/* Encabezado principal */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #338031;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+/* Formulario */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-weight: 550;
+    font-size: 13.5px;
+    color: #b58f1bc7;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #338031;
+    outline: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+form button {
+    background-color: #338031;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #286726;
+}

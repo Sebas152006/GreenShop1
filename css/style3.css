@@ -1,0 +1,168 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #338031;
+    font-family: 'Lato', 'Roboto', 'Open Sans', 'Noto Sans', 'Arial';
+}
+
+/*Fondo beige claro que encapsula los elementos*/
+.recuperar_cuenta{
+    background-color: #fffff0;
+    padding: 20px 25px;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilo para las imágenes en las esquinas */
+.corner {
+    position: fixed;
+    width: 450px;
+    height: 260px;
+    z-index: 1;
+}
+
+.top-left {
+    width: 520px;
+    height: 270px;
+    top: 0;
+    left: 0;
+    margin: 0px;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+    margin: 0px;
+}
+
+.bottom-left {
+    bottom: 0%;
+    left: 0;
+    margin: 0px;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    margin: 0px;
+}
+
+/* Logo en la esquina superior izquierda */
+.logo {
+    position: fixed;
+    top: 33px;
+    left: 20px;
+    z-index: 2;
+}
+
+.logo img {
+    width: 290px;
+    height: 90px;
+    cursor: pointer;
+}
+
+
+/*Fondo beige que encapsula el formulario*/
+.recuadro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefcc;
+    padding: 21px;
+    padding-top: 5px;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/*Titulos de la recuperacion de cuenta*/
+h2 {
+    font-weight: 800;
+    font-size: 20px;
+    color: #338031;
+    margin-bottom: 15px;
+}
+
+/*Texto encima de los input*/
+p {
+    font-weight: 700;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 7px;
+    margin-left: 5px;
+    text-align: left;
+}
+
+/*Diseño de los input y la selección multiple*/
+input {
+    width: 360px;
+    padding: 12px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    font-weight: 550;
+    font-size: 13.5px;
+    color: #b58f1bc7;
+    
+}
+
+::placeholder {
+    color: #b58f1b65;
+}
+
+input:focus {
+    outline-color: #338031;
+}
+
+/*Diseño de los botones*/
+button.control {
+    margin-top: 18px;
+    width: 45%;
+    padding: 14px;
+    background-color: #efefcc;
+    border: none;
+    border-radius: 22px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    
+    font-weight: 750;
+    font-size: 14px;
+    color: #dbad21a8;
+    text-shadow: -1px -1px 0 #fffff0, 
+                1px -1px 0 #fffff0, 
+                -1px 1px 0 #fffff0, 
+                1px 1px 0 #fffff0;
+    cursor: pointer;
+}
+
+button.control:hover {
+    background-color: #e9e9be;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/*Separa y alinea los botones*/
+.botones-navegacion {
+    display: flex;
+    justify-content: center; 
+    gap: 25px;
+}
+
+/*Oculta los otros formularios*/
+.formulario {
+    display: none;
+}
+
+/*Muestra el formulario activo en pantalla*/
+.formulario.activo {
+    display: block;
+}

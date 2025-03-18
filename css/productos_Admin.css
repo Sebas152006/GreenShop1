@@ -1,0 +1,186 @@
+html {
+    font-family: 'Lato', 'Roboto', 'Open Sans', 'Noto Sans', 'Arial';
+}
+
+body {
+    margin: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #338031;
+    padding: 33px 0;
+    gap: 60px;
+    margin-bottom: 35px;
+}
+
+/* Botones del menú */
+a, .menu > a {
+    margin-right: 40px;
+    width: auto; /* Ajusta al contenido */
+    max-width: 150px; /* Limita el ancho máximo */
+    padding: 12px 40px;
+    background-color: #efefcc;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    
+    font-weight: 750;
+    font-size: 18px;
+    text-decoration: none;
+    color: #dbad21d7;
+    text-shadow: -1px -1px 0 #fffff0, 
+                1px -1px 0 #fffff0, 
+                -1px 1px 0 #fffff0, 
+                1px 1px 0 #fffff0;
+    cursor: pointer;
+    position: relative; /* Necesario para el submenú */
+}
+
+/* Hover de botones */
+a:hover, .menu > a:hover {
+    background-color: #e9e9be;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Botón de cerrar sesión */
+.cerrar_sesion {
+    background-color: #ff00009c;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+.cerrar_sesion:hover {
+    background-color: #ff0000a6;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Menú desplegable (estilo para la sección Productos) */
+.menu {
+    position: relative; /* Para posicionar el submenú */
+    display: inline-block;
+}
+
+.submenu {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    top: 100%; /* Alineado justo debajo del botón principal */
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    min-width: 160px; /* Tamaño mínimo del menú */
+}
+
+/* Enlaces del submenú */
+.submenu a {
+    display: block; /* Cada enlace ocupa una fila */
+    padding: 10px 20px;
+    color: #dbad21d7;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Hover del submenú */
+.submenu a:hover {
+    background-color: #e9e9be;
+}
+
+/* Mostrar el submenú al pasar el mouse */
+.menu:hover .submenu {
+    display: block; /* Se muestra al pasar el mouse */
+}
+
+/* Tabla */
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #338031;
+    color: white;
+    font-weight: bold;
+}
+
+td img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+button img {
+    width: 30px; /* Tamaño consistente con el botón eliminar */
+    height: 30px;
+    object-fit: contain; /* Ajusta la imagen sin distorsión */
+}
+
+/* Botón de eliminar más grande */
+.eliminar {
+    width: 39px;
+    height: 39px;
+    margin: 0 auto;
+}
+
+.eliminar2 {
+    margin: 0 auto;
+}
+
+/* Formulario de filtro */
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[name="buscar"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.buscar {
+    padding: 10px 20px;
+    background-color: #338031;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}

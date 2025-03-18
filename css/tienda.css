@@ -1,0 +1,295 @@
+html {
+    background-color: #fffff0;
+    font-family: 'Lato', 'Roboto', 'Open Sans', 'Noto Sans', 'Arial';
+}
+
+body{
+    margin: 0;
+}
+
+/*Barra de navegacion de la pagina web*/
+header {
+    position: sticky; 
+    top: 0; 
+    width: 97.816%; 
+    z-index: 10000;
+    background-color: #338031;
+    padding: 15px;
+    
+}
+
+/* Logo en la esquina superior izquierda */ 
+.logo {
+    position: sticky;
+    left: 10px;
+}
+
+.logo img {
+    width: 230px;
+    height: 70px;
+    cursor: pointer;
+}
+
+/*Carrito de compras*/
+.carrito {
+    position: sticky;
+    left: 92%;
+}
+
+.carrito img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+/* Contador del carrito */
+.carrito-unidades {
+    position: absolute;
+    bottom: 50px;
+    right: 45px;
+    background-color: rgb(212, 0, 0);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/*Boton de cerrar sesion*/
+.cerrar_sesion{
+    position: fixed;
+    bottom: 89%; 
+    left: 80%;
+    
+    padding: 10px;
+    background-color: #ff00009c;
+    border: none;
+    border-radius: 22px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    
+    font-weight: 750;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    
+}
+
+.cerrar_sesion:hover {
+    background-color: #ff0000b2;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+
+/*Contenedor que se encarga de centrar los productos*/ 
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+article {
+    display: flex;
+    gap: 30px;
+    margin: 45px 0;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    background-color: #6cb74e;
+}
+
+/*Recuadro que encapsula el contenido y el nombre del producto*/ 
+.contenido {
+    background-color: #fffff0;
+    padding: 20px;
+    width: 650px;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/*Recuadro beige que encapsula la informacion de los productos*/ 
+.recuadro {
+    background-color: #efefcc;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Recuadro que envuelve a la imagen */
+.imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra la imagen dentro del recuadro */
+    background-color: #fffff0;
+    width: 300px;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo general para todas las imágenes dentro del recuadro */
+.imagen img {
+    max-width: 100%; /* La imagen no será más ancha que su contenedor */
+    max-height: 200px; /* Límite de altura máxima para todas las imágenes */
+    object-fit: contain; /* Asegura que las imágenes mantengan sus proporciones */
+    border-radius: 10px; /* Opcional: redondear las esquinas de todas las imágenes */
+}
+
+/*Diseño del precio del producto*/
+.precio {
+    background-color: #fffff0;
+    padding: 12px;
+    margin: 20px 0;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    padding: 1px 0;
+    text-align: center;
+}
+
+.precio p {
+    font-weight: bold;
+    font-size: 24px;
+    color: #338031;
+}
+
+/*Nombre del producto*/
+h2 {
+    margin-top: 5px;
+    text-align: center;
+}
+
+/*Botones para elegir las unidades y agregar al carrito*/
+.botones {
+    padding: 15px 50px;
+}
+
+/*Botones de aumentar o disminuir unidades*/
+.cantidad-control {
+    width: 9%;
+    padding: 10px;
+    background-color: #efefcc;
+    border: none;
+    border-radius: 22px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    
+    font-weight: 700;
+    font-size: 18px;
+    color: #dbad21a8;
+    text-shadow: -1px -1px 0 #fffff0, 
+                1px -1px 0 #fffff0, 
+                -1px 1px 0 #fffff0, 
+                1px 1px 0 #fffff0;
+    cursor: pointer;
+}
+
+.cantidad-control:hover {
+    background-color: #e9e9be;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/*Input de las unidades*/
+.unidades {
+    background-color: #efefcc;
+    border: none;
+    border-radius: 22px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    width: 9%;
+    height: 40px;
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/*Elimina las flechas de los input tipo number*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*Boton de agregar productos*/
+.agregar {
+    width: 40%;
+    padding: 10px;
+    background-color: #efefcc;
+    border: none;
+    border-radius: 22px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    
+    font-weight: 750;
+    font-size: 14px;
+    color: #dbad21a8;
+    text-shadow: -1px -1px 0 #fffff0, 
+                1px -1px 0 #fffff0, 
+                -1px 1px 0 #fffff0, 
+                1px 1px 0 #fffff0;
+    cursor: pointer;
+
+    margin-left: 60px;
+}
+
+.agregar:hover {
+    background-color: #e9e9be;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/*Logo de Whatsapp*/
+.logo-Whatsapp {
+    position: fixed; 
+    top: 80%;
+    left: 92%;
+    width: 97.816%; 
+}
+
+.logo-Whatsapp img{
+    width: 80px;
+    height: 80px;
+}
+
+/*Barra inferior de la pagina web*/
+footer {
+    background-color: #6cb74e;
+    padding: 0;
+    padding-top: 20px;
+}
+
+/*Contenedor que encapsula el formuario*/
+.formulario {
+    margin: 0 auto;
+    background-color: #fffff0;
+    text-align: center;
+    padding: 10px 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+   
+}
+
+.formulario p {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.formulario input {
+    width: 350px;
+    padding: 12px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    font-weight: 550;
+    font-size: 13.5px;
+    color: #b58f1bc7;
+    
+}
+
+.formulario input:focus {
+    outline-color: #338031;
+}
+
+::placeholder {
+    color: #b58f1b65;
+}

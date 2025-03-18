@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style3.css">
+    <!--Importamos la fuente Lato-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>GreenShop</title>
+    <link rel="icon" href="images/1.png">
+</head>
+<body>
+
+    <!-- Imagen del logo en la esquina superior izquierda -->
+    <a href="index.php" class="logo">
+        <img src="images/Logo.png" alt="GreenShop Logo">
+    </a>
+
+    <!-- Imágenes en las esquinas -->
+    <img src="images/img-1.png" alt="Esquina superior derecha" class="corner top-left">
+    <img src="images/img-2.png" alt="Esquina inferior derecha" class="corner bottom-left">
+    <img src="images/img-3.png" alt="Esquina inferior izquierda" class="corner top-right">
+    <img src="images/img-4.png" alt="Esquina superior izquierda" class="corner bottom-right">
+
+    <!--Formulario de recuperacion de cuenta-->
+    <section class="recuperar_cuenta">
+        <div class="recuadro">
+            <div id="formulario-1" class="formulario activo">
+                <h2>Recuperación de Contraseña</h2>
+
+                <p>Usuario o Correo Electrónico</p>
+                <input type="text" name="usuario, email">
+            </div>
+
+            <!-- Formulario 2: Ingresar el Codigo -->
+            <div id="formulario-2" class="formulario">
+                <h2>Recuperación de Contraseña</h2>
+
+                <p>Ingrese el Código</p>
+                <input type="text" name="codigo">
+            </div>
+
+            <!-- Formulario 2: Recuperar Contraseña -->
+            <div id="formulario-2" class="formulario">
+                <h2>Recuperación de Contraseña</h2>
+
+                <p>Ingrese la Nueva Contraseña</p>
+                <input type="password" name="contraseña" placeholder="MiContrasena1234">
+
+                <p>Repetir Contraseña</p>
+                <input type="password" name="contraseña" placeholder="MiContrasena1234">
+            </div>
+        </div>
+
+        <!-- Botones de navegación -->
+        <div class="botones-navegacion">
+            <button id="btn-anterior" class="control" style="display: none;">ANTERIOR</button>
+            <button id="btn-siguiente" class="control">SIGUIENTE</button>
+        </div>
+    </section>
+
+    <script src="js/script2.js"></script>
+</body>
+</html>
