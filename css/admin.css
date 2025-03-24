@@ -1,0 +1,109 @@
+html {
+    background-color: #338031;
+    font-family: 'Lato', 'Roboto', 'Open Sans', 'Noto Sans', 'Arial';
+}
+
+body {
+    margin: 0;
+}
+
+/* Contenedor principal para las imágenes */
+div {
+    display: flex;
+    justify-content: center;
+    padding-top: 8%;
+}
+
+img {
+    width: 63%;
+    height: 50%;
+}
+
+/* Header */
+header {
+    background-color: #338031;
+    padding: 33px;
+    display: flex;
+    flex-direction: row; /* Asegura que los botones estén en fila */
+    align-items: center;  /* Centra verticalmente dentro del header */
+    justify-content: center; /* Centra horizontalmente en el espacio del header */
+    gap: 60px; /* Espacio entre los botones */
+}
+
+/* Botones del menú */
+a, .menu > a {
+    margin-right: 40px;
+    width: auto; /* Ajusta al contenido */
+    max-width: 150px; /* Limita el ancho máximo */
+    padding: 12px 40px;
+    background-color: #efefcc;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    font-weight: 750;
+    font-size: 18px;
+    text-decoration: none;
+    color: #dbad21d7;
+    text-shadow: -1px -1px 0 #fffff0, 
+                1px -1px 0 #fffff0, 
+                -1px 1px 0 #fffff0, 
+                1px 1px 0 #fffff0;
+    cursor: pointer;
+    position: relative; /* Necesario para el submenú */
+}
+
+/* Hover de botones */
+a:hover, .menu > a:hover {
+    background-color: #e9e9be;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Botón de cerrar sesión */
+.cerrar_sesion {
+    background-color: #ff00009c;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+.cerrar_sesion:hover {
+    background-color: #ff0000a6;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Menú desplegable (estilo para la sección Productos) */
+.menu {
+    position: relative; /* Para posicionar el submenú */
+    display: inline-block;
+    padding: 0;
+}
+
+.submenu {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    top: 100%; /* Alineado justo debajo del botón principal */
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    min-width: 160px; /* Tamaño mínimo del menú */
+}
+
+/* Enlaces del submenú */
+.submenu a {
+    display: block; /* Cada enlace ocupa una fila */
+    padding: 10px 20px;
+    color: #dbad21d7;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Hover del submenú */
+.submenu a:hover {
+    background-color: #e9e9be;
+}
+
+/* Mostrar el submenú al pasar el mouse */
+.menu:hover .submenu {
+    display: block; /* Se muestra al pasar el mouse */
+}

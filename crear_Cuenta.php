@@ -12,7 +12,6 @@
     <link rel="icon" href="images/1.png">
 </head>
 <body>
-
     <!-- Imagen del logo en la esquina superior izquierda -->
     <a href="index.php" class="logo">
         <img src="images/Logo.png" alt="GreenShop Logo">
@@ -45,9 +44,7 @@
                 <button class="control" type="submit">CREAR CUENTA</button>   
 
             </form>
-        </div>
-            
+        </div>     
     </section>
-
 </body>
 </html>

@@ -5,7 +5,7 @@
         if ($_SESSION['id_rol'] == 1) {
             header("location: tienda.php"); // Redirigir a tienda si es cliente
         } elseif ($_SESSION['id_rol'] == 2) {
-            header("location: admin.php"); // Redirigir a la página de admin si es administrador
+            header("location: crud/admin.php"); // Redirigir a la página de admin si es administrador
         }
         exit();
     }

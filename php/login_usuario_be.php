@@ -1,5 +1,4 @@
 <?php
-
     session_start();
 
     include 'conexion_be.php';
@@ -22,7 +21,7 @@
             if($_SESSION['id_rol'] == 1){
                 header("location: ../tienda.php");
             } elseif($_SESSION['id_rol'] == 2){
-                header("location: ../admin.php");
+                header("location: ../crud/admin.php");
             }    
             exit();
         } else {
