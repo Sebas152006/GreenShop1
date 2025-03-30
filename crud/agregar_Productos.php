@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="text" id="nombre" name="nombre" required><br><br> 
             <label for="descripcion">Descripción:</label> <textarea id="descripcion" name="descripcion" required></textarea><br><br> 
             <label for="precio">Precio (COP):</label> <input type="number" id="precio" name="precio" step="0.01" required><br><br> 
-            <label for="imagen">Imagen:</label> <input type="file" id="imagen" name="imagen" accept="image/*" required><br><br> 
+            <label for="imagen">Imagen:</label> <input type="file" id="imagen" name="imagen" accept="image/*" ><br><br> 
             <button type="submit">Guardar Producto</button> 
         </form> 
     </body> 
