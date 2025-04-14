@@ -57,7 +57,7 @@ $result = mysqli_query($conexion, $sql);
         </div>
             <a href="control_Usuarios.php">Usuarios</a>
             <a href="../php/cerrar_sesion.php" class="cerrar_sesion">Cerrar Sesión</a>
-        </header>
+    </header>
     <body>
         <!-- Formulario para filtrar -->
         <form method="GET" action="">
