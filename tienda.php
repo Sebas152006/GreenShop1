@@ -45,6 +45,12 @@ $result = mysqli_query($conexion, $sql);
 
     <a href="php/cerrar_sesion.php" class="cerrar_sesion">Cerrar Sesión</a>
 
+    <!-- Ícono de usuario -->
+    <a href="perfil.php" class="usuario">
+        <img src="images/Perfil.png" alt="Perfil de Usuario" style="width: 40px;">
+    </a>
+
+
     <!-- Imagen del carrito de compras -->
     <a href="index.php" class="carrito">
         <img src="images/Carrito.png" alt="Carrito de Compras">

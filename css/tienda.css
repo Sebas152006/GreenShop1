@@ -33,13 +33,26 @@ header {
 /*Carrito de compras*/
 .carrito {
     position: sticky;
-    left: 92%;
+    left: 85%;
 }
 
 .carrito img{
     width: 60px;
     height: 60px;
     cursor: pointer;
+}
+
+.usuario {
+    position: absolute;
+    left: 92%;
+    top: 30%; 
+}
+
+
+.usuario img {
+    cursor: pointer;
+    width: 45px !important;
+    height: 45px !important;
 }
 
 /* Contador del carrito */
@@ -63,7 +76,7 @@ header {
 .cerrar_sesion{
     position: fixed;
     bottom: 89%; 
-    left: 80%;
+    left: 75%;
     
     padding: 10px;
     background-color: #ff00009c;

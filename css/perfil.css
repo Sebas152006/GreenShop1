@@ -1,0 +1,199 @@
+html {
+    background-color: #fffff0;
+    font-family: 'Lato', 'Roboto', 'Open Sans', 'Noto Sans', 'Arial';
+}
+
+body{
+    margin: 0;
+}
+
+/*Barra de navegacion de la pagina web*/
+header {
+    position: sticky; 
+    top: 0; 
+    width: 97.816%; 
+    z-index: 10000;
+    background-color: #338031;
+    padding: 15px;
+    
+}
+
+/* Logo en la esquina superior izquierda */ 
+.logo {
+    position: sticky;
+    left: 10px;
+}
+
+.logo img {
+    width: 230px;
+    height: 70px;
+    cursor: pointer;
+}
+
+/*Carrito de compras*/
+.carrito {
+    position: sticky;
+    left: 85%;
+}
+
+.carrito img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.usuario {
+    position: absolute;
+    left: 92%;
+    top: 30%; 
+}
+
+
+.usuario img {
+    cursor: pointer;
+    width: 45px !important;
+    height: 45px !important;
+}
+
+/* Contador del carrito */
+.carrito-unidades {
+    position: absolute;
+    bottom: 50px;
+    right: 45px;
+    background-color: rgb(212, 0, 0);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Boton de cerrar sesion */
+.cerrar_sesion{
+    position: fixed;
+    bottom: 89%; 
+    left: 75%;
+    
+    padding: 10px;
+    background-color: #ff00009c;
+    border: none;
+    border-radius: 22px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    
+    font-weight: 750;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    
+}
+
+.cerrar_sesion:hover {
+    background-color: #ff0000b2;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Contenedor de agregar dirección*/
+.agregar-direccion {
+    position: absolute;
+    top: 34%; 
+    right: 3%;
+    background-color: #fffff0; 
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    width: 30%; 
+    text-align: center;
+}
+.agregar-direccion input[type="text"], .agregar-direccion input[type="submit"] {
+    width: 92%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+}
+
+.agregar-direccion input[type="text"] {
+    margin-bottom: 18px;
+    color: #b58f1bc7;
+    font-weight: 550;
+}
+
+::placeholder {
+    color: #b58f1b96;
+}
+
+input:focus, select:focus {
+    outline-color: #338031;
+}
+
+.agregar-direccion input[type="submit"] {
+    background-color: #338031;
+    cursor: pointer;
+    color: white;
+    font-weight: 550;
+}
+
+.agregar-direccion input[type="submit"]:hover {
+    background-color: #2a6a27; /* Color al pasar el mouse */
+}
+
+.agregar-direccion h3 {
+    color: #338031;
+    font-size: 25px;
+    font-weight: 740;
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Contenedor principal para los datos personales */
+.datos-personales {
+    position: static;
+    margin: 40px;
+    width: 50%;
+    background-color: #fffff0;
+    border-radius: 15px;
+    padding: 5px 45px 15px 45px;
+    font-weight: 510;
+    font-size: 17px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Título dentro de los datos personales */
+.datos-personales h2,.direcciones h2, h1 {
+    text-align: center;
+    color: #338031;
+    font-size: 25px;
+    font-weight: 750;
+}
+
+h1{
+    font-size: 35px;
+}
+
+/* Estilo para las listas de direcciones */
+.direcciones {
+    position: static; /* Mantiene el contenedor estático */
+    margin: 40px; /* Espaciado y centrado */
+    width: 50%; /* Ajusta el ancho */
+    background-color:#fffff0; /* Fondo más claro */
+    border-radius: 15px;
+    padding: 5px 45px 15px 45px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.direcciones ul {
+    padding-left: 40px; /* Espaciado desde el borde */
+}
+
+.direcciones li {
+    margin-bottom: 14px;
+    font-weight: 650;
+    font-size: 17px;
+    color: #333;
+}
