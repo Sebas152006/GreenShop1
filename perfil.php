@@ -46,7 +46,7 @@ $resultado_direcciones = mysqli_query($conexion, $query_direcciones);
 
 
     <!-- Imagen del carrito de compras -->
-    <a href="index.php" class="carrito">
+    <a href="carrito.php" class="carrito">
         <img src="images/Carrito.png" alt="Carrito de Compras">
         <span id="contador-carrito" class="carrito-unidades">0</span>
     </a>
@@ -96,5 +96,6 @@ $resultado_direcciones = mysqli_query($conexion, $query_direcciones);
         </form>
     </div>
 
+    <script src="js/script3.js"></script>
 </body>
 </html>

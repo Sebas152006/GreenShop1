@@ -1,0 +1,174 @@
+html {
+    background-color: #fffff0;
+    font-family: 'Lato', 'Roboto', 'Open Sans', 'Noto Sans', 'Arial';
+}
+
+body{
+    margin: 0;
+}
+
+/*Barra de navegacion de la pagina web*/
+header {
+    position: sticky; 
+    top: 0; 
+    width: 97.816%; 
+    z-index: 10000;
+    background-color: #338031;
+    padding: 15px;
+    
+}
+
+/* Logo en la esquina superior izquierda */ 
+.logo {
+    position: sticky;
+    left: 10px;
+}
+
+.logo img {
+    width: 230px;
+    height: 70px;
+    cursor: pointer;
+}
+
+/*Carrito de compras*/
+.carrito {
+    position: sticky;
+    left: 85%;
+}
+
+.carrito img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.usuario {
+    position: absolute;
+    left: 92%;
+    top: 30%; 
+}
+
+
+.usuario img {
+    cursor: pointer;
+    width: 45px !important;
+    height: 45px !important;
+}
+
+/* Contador del carrito */
+.carrito-unidades {
+    position: absolute;
+    bottom: 50px;
+    right: 45px;
+    background-color: rgb(212, 0, 0);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Boton de cerrar sesion */
+.cerrar_sesion{
+    position: fixed;
+    bottom: 89%; 
+    left: 75%;
+    
+    padding: 10px;
+    background-color: #ff00009c;
+    border: none;
+    border-radius: 22px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    
+    font-weight: 750;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    
+}
+
+.cerrar_sesion:hover {
+    background-color: #ff0000b2;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Titulo y total de la compra */
+h1, h2{
+    color: #338031;
+    font-size: 30px;
+    font-weight: 740;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 740;
+}
+
+p{
+    text-align: center;
+    font-size: 17px;
+}
+
+.contenedor{
+    margin: 0 auto; /* Espaciado y centrado */
+    width: 70%; /* Ajusta el ancho */
+    background-color:#338031;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+}
+
+.contenedor div{
+    margin: 10px; /* Espaciado y centrado */
+    background-color:#fffff0;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.modificador{
+
+    width: 9%;
+    padding: 10px;
+    background-color: #efefcc;
+    border: none;
+    border-radius: 22px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    
+    font-weight: 700;
+    font-size: 18px;
+    color: #dbad21a8;
+    text-shadow: -1px -1px 0 #fffff0, 
+                1px -1px 0 #fffff0, 
+                -1px 1px 0 #fffff0, 
+                1px 1px 0 #fffff0;
+    cursor: pointer;
+}
+
+.eliminar{
+    width: 20%;
+    padding: 10px;
+    background-color: #b40303;
+    border: none;
+    border-radius: 22px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    
+    font-weight: 750;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}

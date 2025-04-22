@@ -50,9 +50,8 @@ $result = mysqli_query($conexion, $sql);
         <img src="images/Perfil.png" alt="Perfil de Usuario" style="width: 40px;">
     </a>
 
-
     <!-- Imagen del carrito de compras -->
-    <a href="index.php" class="carrito">
+    <a href="carrito.php" class="carrito">
         <img src="images/Carrito.png" alt="Carrito de Compras">
         <span id="contador-carrito" class="carrito-unidades">0</span>
     </a>
@@ -90,7 +89,7 @@ $result = mysqli_query($conexion, $sql);
                         <input class="unidades" type="number" value="1" min="1">
                         <button onclick="incrementar(this)" class="cantidad-control">+</button>
                         <!-- Botón que se encarga de añadir los productos al carrito -->
-                        <button class="agregar">AGREGAR AL CARRITO</button>
+                        <button onclick="agregarAlCarrito(<?= $producto['id'] ?>)" class="agregar">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
