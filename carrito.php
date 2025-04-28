@@ -79,9 +79,14 @@ $resultado = mysqli_query($conexion, $sql);
             </div>
             
             <!-- Botones para actualizar cantidad y eliminar producto -->
+        
+            <div class="modificadores" style="margin-left: 22%;">
             <button onclick="actualizarCantidad(<?= $producto['id'] ?>, 'sumar')" class="modificador">+</button>
             <button onclick="actualizarCantidad(<?= $producto['id'] ?>, 'restar')" class="modificador">-</button>
             <button onclick="eliminarProducto(<?= $producto['id'] ?>)" class="eliminar">Eliminar Productos</button>
+            </div>
+        
+            
             
         </div>
     <?php } ?>

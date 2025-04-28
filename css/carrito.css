@@ -139,9 +139,17 @@ p{
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
 }
 
-.modificador{
+.modificadores {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;    /* Centra verticalmente */
+    margin: 0 auto;         /* Asegura que el contenedor esté alineado en el centro */
+    width: 50%;
+    gap: 10px;
+}
 
-    width: 9%;
+.modificador{
+    width: 30%;
     padding: 10px;
     background-color: #efefcc;
     border: none;
@@ -158,8 +166,12 @@ p{
     cursor: pointer;
 }
 
+button {
+    width: 10%;
+}
+
 .eliminar{
-    width: 20%;
+    width: 40%;
     padding: 10px;
     background-color: #b40303;
     border: none;
